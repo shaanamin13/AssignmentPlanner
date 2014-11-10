@@ -21,11 +21,6 @@
         <activity
             android:name=".NewAssignmentsActivity"
              >
-            <intent-filter>
-                <action android:name="android.intent.action.PICK_ACTIVITY" />
-
-                <category android:name="android.intent.category.ACTIVITY" />
-            </intent-filter>
         </activity>
 
 
