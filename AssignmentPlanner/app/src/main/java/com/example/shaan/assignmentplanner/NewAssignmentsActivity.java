@@ -4,6 +4,11 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.DatePicker;
+import android.widget.ToggleButton;
+
+import java.util.Date;
 
 
 public class NewAssignmentsActivity extends Activity {
@@ -21,6 +26,24 @@ public class NewAssignmentsActivity extends Activity {
         getMenuInflater().inflate(R.menu.menu_assignments, menu);
         return true;
     }
+
+
+
+    public void onToggleClicked(View view) {
+        // Is the toggle on?
+        DatePicker dueDate = (DatePicker) findViewById(R.id.datePicker);
+        boolean on = ((ToggleButton) view).isChecked();
+
+        if (on) {
+            // Enable vibrate
+          dueDate.setVisibility(View.VISIBLE);
+        } else {
+            // Disable vibrate
+            dueDate.setVisibility(View.GONE);
+        }
+    }
+
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

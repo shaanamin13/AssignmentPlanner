@@ -10,10 +10,15 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
-        <TextView android:text="Assignment Planner" android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView"
-            android:layout_alignParentEnd="false" />
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Add Assignment"
+            android:id="@+id/textView2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -31,6 +36,17 @@
                     android:id="@+id/editText2"
                     android:hint="Assignment Name" />
 
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose Due Date"
+                    android:id="@+id/toggleButton"
+                    android:checked="false"
+                    android:textOff="Choose Due Date"
+                    android:textOn="Select Due Date"
+                    android:clickable="true"
+                    android:onClick="onToggleClicked" />
+
                 <DatePicker
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -39,7 +55,14 @@
                     android:clickable="true"
                     android:layout_centerVertical="true"
                     android:layout_alignParentLeft="true"
-                    android:spinnersShown="true" />
+                    android:spinnersShown="true"
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create Assignment"
+                    android:id="@+id/button" />
 
             </LinearLayout>
         </ScrollView>
