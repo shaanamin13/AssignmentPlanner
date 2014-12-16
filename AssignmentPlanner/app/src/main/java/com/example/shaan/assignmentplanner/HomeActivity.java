@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 
 
@@ -24,7 +24,7 @@ public class HomeActivity extends FragmentActivity {
 
 }
 
-class MyAdapter extends FragmentPagerAdapter {
+class MyAdapter extends FragmentStatePagerAdapter {
 
 
     public MyAdapter(FragmentManager fm) {

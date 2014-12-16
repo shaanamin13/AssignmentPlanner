@@ -66,11 +66,6 @@
                         android:spinnersShown="true"
                         android:visibility="gone" />
 
-                    <TimePicker
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/timePicker" />
-
                 </LinearLayout>
             </ScrollView>
 
